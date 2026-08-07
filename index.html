@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telecomunicações - Guia Completo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📡 Telecomunicações</h1>
+    <div class="subtitle">
+        A ciência de transmitir informação à distância — do telégrafo ao 5G e à fibra óptica
+    </div>
+
+    <div class="image-wrapper">
+        <div class="image-link" onclick="abrirVideo()">
+            <img 
+                src="width_550.png" 
+                alt="Conectividade no Brasil - Clique para assistir ao vídeo"
+                class="infographic-image"
+            />
+            <div class="play-overlay">
+                <div class="play-icon">▶</div>
+                <span class="play-text">Assistir ao vídeo</span>
+            </div>
+        </div>
+        <p class="image-caption">📌 Clique na imagem para assistir ao vídeo sobre Conectividade no Brasil</p>
+    </div>
+    
+    <div id="video-container" style="display: none; margin: 2rem 0; border-radius: 1.2rem; overflow: hidden; box-shadow: 0 8px 30px rgba(0, 20, 40, 0.15);">
+        <video controls width="100%" style="display: block;">
+            <source src="Conectividade_no_Brasil.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+    
+    <script>
+    function abrirVideo() {
+        var container = document.getElementById('video-container');
+        if (container.style.display === 'none' || container.style.display === '') {
+            container.style.display = 'block';
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+            container.style.display = 'none';
+        }
+    }
+    </script>
+
+    <div class="intro-highlight">
+        <strong>🔍 O que são Telecomunicações?</strong><br>
+        É o conjunto de tecnologias e técnicas que permitem a transmissão, recepção e processamento de informações 
+        (voz, dados, imagens, vídeo) por meio de sinais elétricos, ondas eletromagnéticas ou luz, 
+        conectando pessoas e máquinas em qualquer lugar do mundo.
+    </div>
+
+    <h2>⏳ Evolução histórica</h2>
+    <p>A história das telecomunicações é marcada por saltos tecnológicos que encurtaram distâncias:</p>
+
+    <div class="grid-cards">
+        <div class="card">
+            <span class="ano">1837</span>
+            <span class="evento">Telégrafo elétrico<br><small>(Código Morse)</small></span>
+        </div>
+        <div class="card">
+            <span class="ano">1876</span>
+            <span class="evento">Telefone<br><small>(Bell)</small></span>
+        </div>
+        <div class="card">
+            <span class="ano">1895</span>
+            <span class="evento">Rádio<br><small>(Marconi)</small></span>
+        </div>
+        <div class="card">
+            <span class="ano">1960s</span>
+            <span class="evento">Satélites<br><small>(Telstar)</small></span>
+        </div>
+        <div class="card">
+            <span class="ano">1980s</span>
+            <span class="evento">Telefonia móvel<br><small>(1G)</small></span>
+        </div>
+        <div class="card">
+            <span class="ano">1990s</span>
+            <span class="evento">Internet comercial<br><small>(WWW)</small></span>
+        </div>
+        <div class="card">
+            <span class="ano">2000s</span>
+            <span class="evento">Banda larga<br><small>(ADSL, Fibra)</small></span>
+        </div>
+        <div class="card">
+            <span class="ano">2020s</span>
+            <span class="evento">5G &amp; IoT<br><small>(Internet das Coisas)</small></span>
+        </div>
+    </div>
+
+    <h2>📶 Tipos de sinais e meios de transmissão</h2>
+
+    <h3>📡 Quanto ao sinal</h3>
+    <ul>
+        <li><strong>Analógico:</strong> Variação contínua (ex: voz humana, rádio AM/FM).</li>
+        <li><strong>Digital:</strong> Representado por bits (0 e 1) – mais imune a ruídos, permitindo compressão e correção de erros.</li>
+    </ul>
+
+    <h3>🔌 Meios de transmissão</h3>
+    <ul>
+        <li><strong>Guiados (cabeados):</strong> 
+            <ul>
+                <li>Par trançado (telefonia, redes Ethernet)</li>
+                <li>Cabo coaxial (TV a cabo, internet)</li>
+                <li><strong>Fibra óptica</strong> – maior capacidade, baixa perda, imune a interferências.</li>
+            </ul>
+        </li>
+        <li><strong>Não guiados (wireless):</strong>
+            <ul>
+                <li>Ondas de rádio (Wi-Fi, Bluetooth, rádio/TV)</li>
+                <li>Micro-ondas (links ponto-a-ponto, satélites)</li>
+                <li>Infravermelho (controles remotos, comunicação de curto alcance)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>🌐 Redes de Telecomunicações</h2>
+    <p>As redes podem ser classificadas por alcance e topologia:</p>
+
+    <ul>
+        <li><strong>PAN</strong> (Pessoal) – poucos metros (ex: Bluetooth).</li>
+        <li><strong>LAN</strong> (Local) – prédio/campus (ex: rede Wi-Fi).</li>
+        <li><strong>MAN</strong> (Metropolitana) – cidade (ex: redes de operadoras).</li>
+        <li><strong>WAN</strong> (Ampla) – país/continente (ex: internet, backbones).</li>
+    </ul>
+
+    <div class="info-box">
+        <strong>🌍 Curiosidade:</strong> Os cabos submarinos de fibra óptica transportam cerca de <strong>99% dos dados intercontinentais</strong>, com latência menor do que satélites.
+    </div>
+
+    <h2>⚡ Tecnologias que movem o mundo hoje</h2>
+
+    <h3>📱 5G</h3>
+    <p>Redes móveis de quinta geração oferecem <strong>baixa latência</strong> (∼1 ms), <strong>alta velocidade</strong> (até 10 Gbps) e suporte massivo a dispositivos conectados, viabilizando carros autônomos, cidades inteligentes e realidade aumentada.</p>
+
+    <h3>🔦 Fibra óptica (FTTH)</h3>
+    <p><strong>Fiber-to-the-Home</strong> leva a fibra até a residência, garantindo velocidades simétricas (upload/download) e estabilidade. É a base da internet de alta performance.</p>
+
+    <h3>📡 Satélites de baixa órbita (LEO)</h3>
+    <p>Constelações como Starlink e OneWeb prometem internet de baixa latência em áreas remotas, com milhares de satélites próximos à Terra (∼500 km).</p>
+
+    <h2>📊 Comparação entre meios de transmissão</h2>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Meio</th>
+                    <th>Velocidade típica</th>
+                    <th>Distância</th>
+                    <th>Vantagem</th>
+                    <th>Desvantagem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Fibra óptica</strong></td>
+                    <td>1 – 800 Gbps</td>
+                    <td>Centenas de km</td>
+                    <td>Alta capacidade, imunidade</td>
+                    <td>Custo de instalação</td>
+                </tr>
+                <tr>
+                    <td><strong>Cabo coaxial</strong></td>
+                    <td>100 Mbps – 1 Gbps</td>
+                    <td>~100 m</td>
+                    <td>Boa relação custo/benefício</td>
+                    <td>Mais suscetível a ruídos</td>
+                </tr>
+                <tr>
+                    <td><strong>Par trançado</strong></td>
+                    <td>10 Mbps – 10 Gbps</td>
+                    <td>~100 m</td>
+                    <td>Barato, fácil de instalar</td>
+                    <td>Perda em longas distâncias</td>
+                </tr>
+                <tr>
+                    <td><strong>Wi-Fi 6</strong></td>
+                    <td>~1 – 10 Gbps</td>
+                    <td>~50 m</td>
+                    <td>Mobilidade, fácil acesso</td>
+                    <td>Interferência, segurança</td>
+                </tr>
+                <tr>
+                    <td><strong>5G</strong></td>
+                    <td>até 10 Gbps</td>
+                    <td>~1 km (célula)</td>
+                    <td>Baixa latência, mobilidade</td>
+                    <td>Infraestrutura densa</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>🚀 Desafios e o futuro</h2>
+    <ul>
+        <li><strong>Capacidade:</strong> O tráfego global de dados cresce exponencialmente (vídeo, IoT, IA).</li>
+        <li><strong>Latência:</strong> Aplicações críticas (cirurgia remota, veículos autônomos) exigem latência < 1 ms.</li>
+        <li><strong>Segurança e privacidade:</strong> Criptografia e resiliência a ataques são essenciais.</li>
+        <li><strong>Sustentabilidade:</strong> Redes mais eficientes energeticamente e uso de materiais recicláveis.</li>
+    </ul>
+
+    <div class="info-box">
+        <strong>🔮 Tendências:</strong> <strong>6G</strong> (já em pesquisa) trará comunicações holográficas, integração com sensores e inteligência artificial embarcada. A <strong>fibra óptica</strong> continuará sendo o pilar das redes troncais, enquanto o <strong>espaço</strong> ganhará protagonismo com satélites e comunicações quânticas.
+    </div>
+
+    <h2>💡 A óptica nas telecomunicações</h2>
+    <p>
+        Como vimos, a <strong>fibra óptica</strong> é o meio mais avançado para transmissão de dados. 
+        Seu princípio é a <strong>reflexão interna total</strong>: a luz viaja pelo núcleo da fibra 
+        (geralmente sílica) e é refletida pela casca, percorrendo longas distâncias com mínima perda.
+    </p>
+    <p>
+        Além da fibra, a <strong>fotônica</strong> também atua em amplificadores ópticos, 
+        comutadores e multiplexadores por comprimento de onda (WDM), que permitem transmitir 
+        vários canais simultaneamente na mesma fibra, multiplicando a capacidade.
+    </p>
+
+    <div class="footer-note">
+        <span class="badge">educacional</span>
+        &nbsp; Conteúdo produzido para fins didáticos sobre Telecomunicações &nbsp; 
+        <span class="badge">2026</span>
+    </div>
+
+</div>
+
+</body>
+</html>
